@@ -20,7 +20,7 @@ jobs:
            password: ${{ secrets.DOCKER_PASSWORD }}
         
        - name: Build image
-         run: docker build -t tyagiarjun/nodeapp:v8 .
+         run: docker build -t tyagiarjun/nodeapp:latest .
 
        - name: Push image
-         run: docker push tyagiarjun/nodeapp:v8
+         run: docker push tyagiarjun/nodeapp:latest
